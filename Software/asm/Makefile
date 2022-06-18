@@ -1,7 +1,7 @@
 .PHONY: clean
 
 ASM = python asm.py
-BURN = minipro -p AT28C256 -w
+BURN = minipro -p AT28C64B -w
 
 %.bin: %.asm
 	$(ASM) -o $@ $< 

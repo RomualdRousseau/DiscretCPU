@@ -154,7 +154,7 @@ class CodeGenerator:
 		self.code = [ ]
 
 	def generate(self, code):
-		return bytearray(code) + bytearray([0x00] * (32768 - len(code)))
+		return bytearray(code) + bytearray([0x00] * (8192 - len(code)))
 
 def parseArgs():
 	options, arguments = getopt.getopt(
